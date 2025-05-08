@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ton Score</title>
+  <style>
+    body { text-align: center; font-family: sans-serif; padding: 30px; }
+    .score { font-size: 32px; color: green; margin-top: 30px; }
+  </style>
+</head>
+<body>
+  <h1>🎉 Jeu Terminé ! 🎉</h1>
+  <p class="score" id="scoreDisplay"></p>
+
+  <script>
+    const score = localStorage.getItem("intermediateScore") || 0;
+    document.getElementById("scoreDisplay").innerText = "Ton score : " + score + " / 30";
+  </script>
+</body>
+</html>
